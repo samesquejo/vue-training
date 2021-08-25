@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div id="app">
-        <h1>Hello this is VUE training</h1>
+
+        <div class="container">
+            <h1>Movies</h1>
+            
+            <div class="lists">
+                <div
+                    class="lists-item"
+                    v-for="(movie, key) in movies"
+                    :key="key"
+                >
+                    <figure>
+                        <img
+                            :src="movie.img"
+                            :alt="movie.title"
+                        >
+                    </figure>
+                    <div class="lists-item-body">
+                        <h3>{{ movie.title }}</h3>
+                        <h5>{{ movie.type }} . {{ movie.StreamingPlatform }}</h5>
+                        <p>Episodes: {{ movie.episodes }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 <script src="app.js" type="module"></script>

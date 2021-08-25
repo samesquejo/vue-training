@@ -1,0 +1,46 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+h1 {
+    margin: 0;
+    color: #fff;
+    padding: 15px;
+}
+.lists {
+    display: flex;
+    margin-top: 24px;
+}
+.lists-item {
+    max-width: 300px;
+    width: 100%;
+    padding: 0 15px;
+}
+.lists-item figure {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+}
+.lists-item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lists-item-body {
+    background-color: #fff;
+    min-height: 150px;
+    padding: 8px 15px;
+}
