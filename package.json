@@ -1,0 +1,19 @@
+{
+  "name": "femake-skeleton",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "dev@make.technology, eugenealvizo@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.2.6",
+    "laravel-mix": "^2.1.11",
+    "vue": "^2.6.14",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  }
+}
